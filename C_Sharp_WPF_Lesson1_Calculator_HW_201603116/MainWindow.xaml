@@ -1,0 +1,49 @@
+﻿<Window x:Class="C_Sharp_WPF_Lesson1_Calculator_HW_201603116.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C_Sharp_WPF_Lesson1_Calculator_HW_201603116"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--Row--><Grid.RowDefinitions>
+            <!--r0--><RowDefinition Height="56pt"/>
+            <!--r1--><RowDefinition Height="*"/>
+            <!--r2--><RowDefinition Height="*"/>
+            <!--r3--><RowDefinition Height="*"/>
+            <!--r4--><RowDefinition Height="*"/>
+        <!--Row--></Grid.RowDefinitions>
+        <!--Col--><Grid.ColumnDefinitions>
+            <!--c0--><ColumnDefinition Width="*"/>
+            <!--c1--><ColumnDefinition Width="*"/>
+            <!--c2--><ColumnDefinition Width="*"/>
+            <!--c3--><ColumnDefinition Width="*"/>
+            <!--c4--><ColumnDefinition Width="*"/>
+            <!--c5--><ColumnDefinition Width="*"/>
+        <!--Col--></Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="6" Margin="5"/>
+        <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="6" Grid.RowSpan="5"/>
+        <TextBox Name="Field_of_result" Grid.Row="0" Grid.ColumnSpan="6" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" FontSize="32pt"></TextBox>
+        <Button Name="BtClear" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" BorderBrush="Black" BorderThickness="2" Margin="5,0,0,5" FontSize="32pt" Click="BtClear_Click">Clr</Button>
+        <Button Name="Bt1" Grid.Row="1" Grid.Column="1" FontSize="32pt" BorderBrush="Black" BorderThickness="0,2,2,2" Margin="0,0,0,0" Click="Bt1_Click">1</Button>
+        <Button Name="Bt2" Grid.Row="1" Grid.Column="2" FontSize="32pt" BorderBrush="Black" BorderThickness="0,2,2,2" Margin="0,0,0,0" Click="Bt2_Click">2</Button>
+        <Button Name="Bt3" Grid.Row="1" Grid.Column="3" FontSize="32pt" BorderBrush="Black" BorderThickness="0,2,2,2" Margin="0,0,0,0" Click="Bt3_Click">3</Button>
+        <Button Name="Bt4" Grid.Row="2" Grid.Column="1" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt4_Click">4</Button>
+        <Button Name="Bt5" Grid.Row="2" Grid.Column="2" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt5_Click">5</Button>
+        <Button Name="Bt6" Grid.Row="2" Grid.Column="3" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt6_Click">6</Button>
+        <Button Name="Bt7" Grid.Row="3" Grid.Column="1" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt7_Click">7</Button>
+        <Button Name="Bt8" Grid.Row="3" Grid.Column="2" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt8_Click">8</Button>
+        <Button Name="Bt9" Grid.Row="3" Grid.Column="3" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,0" Click="Bt9_Click">9</Button>
+        <Button Name="Bt0" Grid.Row="4" Grid.Column="1" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,5" Click="Bt0_Click">0</Button>
+        <Button Name="BtPt" Grid.Row="4" Grid.Column="2" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,5" Click="BtPt_Click">.</Button>
+        <Button Name="BtPM" Grid.Row="4" Grid.Column="3" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,5" Click="BtPM_Click">+/-</Button>
+        <Button Name="BtMinus" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4" FontSize="32pt" BorderBrush="Black" BorderThickness="0,2,2,2" Margin="0,0,0,0" Click="BtMinus_Click">-</Button>
+        <Button Name="BtPlus" Grid.Row="3" Grid.RowSpan="2" Grid.Column="4" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,0,5" Click="BtPlus_Click">+</Button>
+        <Button Name="BtBack" Grid.Row="1" Grid.Column="5" FontSize="18pt" BorderBrush="Black" BorderThickness="0,2,2,2" Margin="0,0,5,0" Click="BtBack_Click">Back</Button>
+        <Button Name="BtDev" Grid.Row="2" Grid.Column="5" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,5,0" Click="BtDev_Click">/</Button>
+        <Button Name="BtMul" Grid.Row="3" Grid.Column="5" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,5,0" Click="BtMul_Click">*</Button>
+        <Button Name="BtRes" Grid.Row="4" Grid.Column="5" FontSize="32pt" BorderBrush="Black" BorderThickness="0,0,2,2" Margin="0,0,5,5" Click="BtRes_Click">=</Button>
+
+    </Grid>
+</Window>
